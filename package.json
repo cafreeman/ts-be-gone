@@ -32,6 +32,7 @@
     "build": "yarn clean && yarn ts:all",
     "clean": "rimraf ./*.d.ts ./*.d.ts.map ./dist",
     "lint": "eslint src test",
+    "prepare": "yarn build",
     "prepublishOnly": "yarn test && yarn build",
     "postpublish": "yarn clean",
     "release": "release-it",
