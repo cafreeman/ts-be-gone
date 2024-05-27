@@ -62,6 +62,7 @@ export async function removeTypes(code: string, prettierConfig: PrettierOptions 
       retainLines: true,
       shouldPrintComment: (comment) => comment !== '___REMOVE_ME___',
     },
+    configFile: false,
   });
 
   if (!transformed || !transformed.code) {
